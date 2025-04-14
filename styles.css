@@ -1,0 +1,120 @@
+/* Fonts */
+@font-face {
+    font-family: BaiJamjuree;
+    src: url("./fonts/BaiJamjuree/BaiJamjuree-Regular.ttf");
+}
+
+* {
+    font-family: "BaiJamjuree";
+}
+
+/* Estilos por secciones */
+
+.texto-oscuro {
+    color: hsl(210, 10%, 33%);
+    font-weight: 600;
+}
+.text0-claro {
+    color: hsl(201, 11%, 66%);
+    font-weight: 400;
+}
+
+/* Hero section */
+.hero-section {
+    max-width: 1440px;
+    text-align: center;
+
+}
+
+#copy {
+    color: hsl(171, 66%, 44%);
+    font-size: 150px;
+    margin: 0;
+    padding: 0;
+}
+.section-info {
+    text-align: center;
+}
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+@media screen and (max-width: 753px) {
+    .box {
+        flex-direction: column;
+        align-items: center;
+    }
+    #copy {
+        font-size: 90px;
+    }
+}
+/* Footer */
+footer {
+    background-color: hsla(180, 1%, 86%, 0.747);
+}
+/* .footer-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    height: 50vh;
+    justify-content: space-evenly;
+} */
+
+/* From Uiverse.io by kosedagyazilim */ 
+.button {
+    display: inline-block;
+    padding: 12px 28px;
+    margin: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background-image: linear-gradient(to bottom right, #00c6ff, #0072ff);
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0px 4px 0px #0072ff;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 0px #0072ff;
+}
+
+.button:active {
+    transform: translateY(0px);
+    box-shadow: none;
+    background-image: linear-gradient(to bottom right, #0072ff, #00c6ff);
+}
+
+.button:before,
+.button:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.button:before {
+    top: -3px;
+    left: -3px;
+    border-radius: 40px;
+    border-top: 3px solid #fff;
+    border-left: 3px solid #fff;
+}
+
+.button:after {
+    bottom: -3px;
+    right: -3px;
+    border-radius: 40px;
+    border-bottom: 3px solid #fff;
+    border-right: 3px solid #fff;
+}
+
