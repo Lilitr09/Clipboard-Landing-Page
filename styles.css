@@ -14,9 +14,10 @@
     color: hsl(210, 10%, 33%);
     font-weight: 600;
 }
-.text0-claro {
+.texto-claro {
     color: hsl(201, 11%, 66%);
     font-weight: 400;
+    font-size: 1.1rem;
 }
 
 /* Hero section */
@@ -26,9 +27,7 @@
 
 }
 
-#copy {
-    color: hsl(171, 66%, 44%);
-    font-size: 150px;
+.copy {
     margin: 0;
     padding: 0;
 }
@@ -45,8 +44,12 @@
         flex-direction: column;
         align-items: center;
     }
-    #copy {
-        font-size: 90px;
+    .copy {
+        height: 70px;
+        transition: all 1.2s ease;
+    }
+    .hero-banner {
+        height: 150px;
     }
 }
 /* Footer */
@@ -66,43 +69,44 @@ footer {
     justify-content: space-evenly;
 } */
 
+/* Estilos de los botones */
+/* Boton verde */
 /* From Uiverse.io by kosedagyazilim */ 
-.button {
+.button-verde {
     display: inline-block;
     padding: 12px 28px;
     margin: 10px;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bold;
-    text-transform: uppercase;
     color: #fff;
-    background-image: linear-gradient(to bottom right, #00c6ff, #0072ff);
+    background-color: hsl(171, 66%, 44%);
     border: none;
     border-radius: 40px;
-    box-shadow: 0px 4px 0px #0072ff;
+    box-shadow: 0px 4px 0px hsl(171, 66%, 44%);
     transition: all 0.2s ease-in-out;
     cursor: pointer;
 }
 
-.button:hover {
+.button-verde:hover {
     transform: translateY(-2px);
-    box-shadow: 0px 6px 0px #0072ff;
+    box-shadow: 0px 6px 0px hsl(171, 66%, 44%);
 }
 
-.button:active {
+.button-verde:active {
     transform: translateY(0px);
-    box-shadow: none;
-    background-image: linear-gradient(to bottom right, #0072ff, #00c6ff);
+    box-shadow: 0 0 15px hsl(171, 66%, 44%);
+    background-color: hsl(171, 66%, 44%);
 }
 
-.button:before,
-.button:after {
+.button-verde:before,
+.button-verde:after {
     content: "";
     position: absolute;
     width: 0;
     height: 0;
 }
 
-.button:before {
+.button-verde:before {
     top: -3px;
     left: -3px;
     border-radius: 40px;
@@ -110,7 +114,7 @@ footer {
     border-left: 3px solid #fff;
 }
 
-.button:after {
+.button-verde:after {
     bottom: -3px;
     right: -3px;
     border-radius: 40px;
@@ -118,3 +122,53 @@ footer {
     border-right: 3px solid #fff;
 }
 
+/* Boton azul */
+.button-azul {
+    display: inline-block;
+    padding: 12px 28px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: hsl(233, 100%, 69%);
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0px 4px 0px hsl(233, 100%, 69%);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.button-azul:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 0px hsl(233, 100%, 69%);
+}
+
+.button-azul:active {
+    transform: translateY(0px);
+    box-shadow: 0 0 15px hsl(233, 100%, 69%);
+    background-color: hsl(233, 100%, 69%);
+}
+
+.button-azul:before,
+.button-azul:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.button-azul:before {
+    top: -3px;
+    left: -3px;
+    border-radius: 40px;
+    border-top: 3px solid #fff;
+    border-left: 3px solid #fff;
+}
+
+.button-azul:after {
+    bottom: -3px;
+    right: -3px;
+    border-radius: 40px;
+    border-bottom: 3px solid #fff;
+    border-right: 3px solid #fff;
+}
