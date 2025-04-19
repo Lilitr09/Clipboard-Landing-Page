@@ -28,7 +28,6 @@
 }
 /* Hero section */
 .hero-section {
-    max-width: 1440px;
     text-align: center;
 
 }
@@ -51,7 +50,7 @@
 }
 .desktop-img {
     max-height: 500px;
-    max-width: 570px;
+    max-width: auto;
 }
 .t-centro {
     text-align: center;
@@ -70,22 +69,44 @@
         height: 150px;
     }
 }
+.c {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 546px) {
+    .c {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 /* Footer */
 footer {
     background-color: hsla(180, 1%, 86%, 0.747);
 }
-/* .footer-items {
+.footer-items {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-evenly;
+    height: 30vh;
 
 }
-.links {
+.row > a {
+    text-decoration: none;
+}
+.redes {
     display: flex;
-    flex-wrap: wrap;
-    height: 50vh;
     justify-content: space-evenly;
-} */
+}
+@media screen and (max-width: 700px) {
+    .footer-items {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
 
 /* Estilos de los botones */
 /* Boton verde */
