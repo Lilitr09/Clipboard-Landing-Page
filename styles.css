@@ -3,6 +3,10 @@
     font-family: BaiJamjuree;
     src: url("./fonts/BaiJamjuree/BaiJamjuree-Regular.ttf");
 }
+@font-face {
+    font-family: BaiJamjuree-Bold;
+    src: url("./fonts/BaiJamjuree/BaiJamjuree-SemiBold.ttf");
+}
 
 * {
     font-family: "BaiJamjuree";
@@ -12,19 +16,25 @@
 
 .texto-oscuro {
     color: hsl(210, 10%, 33%);
-    font-weight: 600;
+    font-family: "BaiJamjuree-Bold";
 }
 .texto-claro {
     color: hsl(201, 11%, 66%);
     font-weight: 400;
     font-size: 1.1rem;
 }
-
+.section {
+    margin-top: 100px;
+}
 /* Hero section */
 .hero-section {
     max-width: 1440px;
     text-align: center;
 
+}
+#hero-title {
+    font-size: 2.2rem;
+    
 }
 
 .copy {
@@ -39,6 +49,14 @@
     flex-direction: row;
     justify-content: center;
 }
+.desktop-img {
+    max-height: 500px;
+    max-width: 570px;
+}
+.t-centro {
+    text-align: center;
+}
+
 @media screen and (max-width: 753px) {
     .box {
         flex-direction: column;
